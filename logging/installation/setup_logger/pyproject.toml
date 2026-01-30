@@ -3,7 +3,7 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "setuo_logger_pip
+name = "setuo_logger
 version = "0.1.0"
 description = "Logger utility"
 readme = "readme.md"
