@@ -1,4 +1,4 @@
-# setup_logger_yaml
+# setup_logger
 
 Utility di logging riutilizzabile per Python.
 
