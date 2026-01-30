@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "my-logging"
+version = "0.1.0"
+description = "Logger utility"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{name="Federico Gamberini", email="federico.gamberini.fg@gmail.com"}]
+license = {text = "MIT"}
+
+#[project.urls]
+#Homepage = "https://example.com"
