@@ -3,13 +3,13 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "my-logging"
+name = "setuo_logger_yaml
 version = "0.1.0"
 description = "Logger utility"
-readme = "README.md"
+readme = "readme.md"
 requires-python = ">=3.10"
-authors = [{name="Tuo Nome", email="tuo@email.it"}]
+authors = [{name="Federico Gamberini", email="federico.gamberini.fg@gmail.com"}]
 license = {text = "MIT"}
 
 #[project.urls]
-#Homepage =
+#Homepage = "https://example.com"
