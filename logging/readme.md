@@ -19,7 +19,7 @@ All’interno della cartella trovi:
   - Spiega i concetti base del modulo `logging`  
   - Include esempi pratici e commentati  
 - `logger_utils.py` modulo py pronto all'uso.
-*(Altri file/materiali verranno aggiunti progressivamente)*
+- `setpu_logger` contiene i materiali per installare il modulo via pip, e configurarlo con APY py o YAML (leggere la )
 
 ---
 
