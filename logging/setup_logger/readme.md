@@ -18,7 +18,7 @@ Caratteristiche principali:
 
 ### Da repository locale
 ```bash
-pip install .
+pip install git+https://github.com/FedeGambe/teoria.git@main#subdirectory=logging/setup_logger
 ```
 ---
 
