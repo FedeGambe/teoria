@@ -14,6 +14,24 @@ sull’installazione globale di Python.
 
 ---
 
+## Cosa trovi in questa cartella
+
+In questa cartella sono presenti diversi file utili per imparare e usare i venv:
+
+### Notebook (.ipynb)
+Un file notebook che spiega la teoria e mostra esempi pratici sull’uso dei virtual environment.
+
+### File Markdown (.md)
+- **cheatsheet.md** → scheda rapida con i comandi principali  
+- **comandi.md** → lista completa dei comandi più usati
+
+### Cartella `commands/`
+Contiene script pronti all’uso per creare e gestire venv:
+
+- file **.ps1** (PowerShell)  
+- file **.zsh** (Zsh / macOS / Linux)
+
+---
 ## Perché conviene usare un venv
 
 ### Isolamento
