@@ -1,12 +1,12 @@
 # Python venv – Commands
 
 Create virtual environment:  
-Windows: `python -m venv .venv`  
-macOS / Linux: `python3 -m venv .venv`
+- Windows: `python -m venv .venv`  
+- macOS / Linux: `python3 -m venv .venv`
 
 Activate virtual environment:  
-Windows (PowerShell): `.venv\Scripts\Activate.ps1`  
-macOS / Linux: `source .venv/bin/activate`
+- Windows (PowerShell): `.venv\Scripts\Activate.ps1`  
+- macOS / Linux: `source .venv/bin/activate`
 
 Deactivate virtual environment:  
 `deactivate`
