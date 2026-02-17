@@ -1,7 +1,19 @@
 # Classi in Python
 
-Le classi sono il cuore della **Programmazione Orientata agli Oggetti (OOP)** in Python.  
-Permettono di raggruppare **dati (attributi)** e **funzioni che operano su quei dati (metodi)** in un'unica unità logica.
+Questa cartella contiene **notebook didattici** dedicati alla Programmazione Orientata agli Oggetti (OOP) in Python.  
+Le classi permettono di raggruppare **dati (attributi)** e **funzioni che operano su quei dati (metodi)** in un'unica unità logica.
+
+---
+
+## Contenuti attuali
+
+Al momento, la cartella include i seguenti notebook:
+
+1. **Classi.ipynb** – Introduzione alle classi, attributi, metodi e istanze.
+2. **ABC.ipynb** – Introduzione alle classi astratte (Abstract Base Classes).
+3. **Dataclass.ipynb** – Utilizzo delle `dataclass` per definire classi leggere e leggibili.
+
+> In futuro verranno aggiunti notebook su altre **classi speciali** di Python.
 
 ---
 
