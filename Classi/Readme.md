@@ -10,7 +10,7 @@ Le classi permettono di raggruppare **dati (attributi)** e **funzioni che operan
 Al momento, la cartella include i seguenti notebook:
 
 1. **Classi.ipynb** – Introduzione alle classi, attributi, metodi e istanze.
-2. **ABC.ipynb** – Introduzione alle classi astratte (Abstract Base Classes).
+2. **Abstract_Base_Class.ipynb** – Introduzione alle classi astratte (Abstract Base Classes).
 3. **Dataclass.ipynb** – Utilizzo delle `dataclass` per definire classi leggere e leggibili.
 
 > In futuro verranno aggiunti notebook su altre **classi speciali** di Python.
