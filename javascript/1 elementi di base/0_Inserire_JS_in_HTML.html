@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Inserire JS in HTML</title>
+
+    <!--
+        ============================================================
+        INSERIRE JAVASCRIPT IN HTML — le 3 modalità
+        ============================================================
+        Questo file NON si esegue con `node`: va aperto nel browser
+        (o con Live Server in VS Code) perché mescola HTML e JS.
+    -->
+
+    <!-- 1. SCRIPT INTERNO nell'head -->
+    <!-- Se il tag <script> sta nell'<head>, il browser lo esegue PRIMA
+         di aver letto il resto della pagina: se lo script cerca un
+         elemento HTML (es. document.getElementById), quell'elemento
+         non esiste ancora -> errore o risultato null. -->
+    <script>
+        console.log("Script interno nell'head: eseguito subito, PRIMA del body");
+        // document.getElementById("titolo") qui darebbe null: il <h1> sotto non esiste ancora
+    </script>
+
+    <!-- 2. SCRIPT ESTERNO con defer (la pratica consigliata) -->
+    <!-- src punta a un file .js separato. L'attributo "defer" dice al
+         browser: scarica il file in parallelo al parsing dell'HTML,
+         ma ESEGUILO solo dopo che tutto il documento è stato letto.
+         Per questo si può mettere anche nell'head senza problemi. -->
+    <script src="./script-esempio.js" defer></script>
+
+    <!-- 3. SCRIPT ESTERNO con async -->
+    <!-- Come defer, scarica in parallelo, ma lo esegue APPENA pronto,
+         senza aspettare la fine del parsing HTML: l'ordine di
+         esecuzione rispetto ad altri script NON è garantito.
+         Utile per script indipendenti dal DOM (es. analytics). -->
+    <!-- <script src="./analytics.js" async></script> -->
+</head>
+<body>
+    <h1 id="titolo">Pagina di esempio</h1>
+
+    <!-- 4. SCRIPT INTERNO a fine BODY (alternativa storica a defer) -->
+    <!-- Prima che esistessero defer/async, la convenzione era mettere
+         lo <script> subito prima della chiusura di </body>: a quel
+         punto tutto l'HTML sopra è già stato letto ed è sicuro
+         manipolare il DOM. Funziona ancora, ma oggi si preferisce
+         <script defer> nell'head: più leggibile, stessa garanzia. -->
+    <script>
+        console.log("Script a fine body: eseguito DOPO che tutto l'HTML è stato letto");
+        console.log(document.getElementById("titolo").textContent); // "Pagina di esempio" -> qui funziona
+    </script>
+</body>
+</html>
+
+<!--
+    RIEPILOGO
+    ------------------------------------------------------------
+    - <script> nell'head, senza attributi -> blocca il parsing, il DOM sotto non esiste ancora
+    - <script> a fine body -> semplice e sicuro, ma blocca comunque il rendering finché non arriva lì
+    - <script src="..." defer> -> scaricato in parallelo, eseguito dopo il parsing, IN ORDINE -> scelta consigliata
+    - <script src="..." async> -> scaricato in parallelo, eseguito appena pronto, ordine NON garantito
+-->
